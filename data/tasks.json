@@ -1,0 +1,182 @@
+[
+  {
+    "id": "t01",
+    "repo": "data/repos_task/t01",
+    "target_file": "calc.py",
+    "description": "Fix add() so it returns the sum of a and b.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "add"
+  },
+  {
+    "id": "t02",
+    "repo": "data/repos_task/t02",
+    "target_file": "calc.py",
+    "description": "Fix sub() so it returns a minus b.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "sub"
+  },
+  {
+    "id": "t03",
+    "repo": "data/repos_task/t03",
+    "target_file": "calc.py",
+    "description": "Fix mul() so it returns the product of a and b.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "mul"
+  },
+  {
+    "id": "t04",
+    "repo": "data/repos_task/t04",
+    "target_file": "calc.py",
+    "description": "Fix div() so it returns a divided by b.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "div"
+  },
+  {
+    "id": "t05",
+    "repo": "data/repos_task/t05",
+    "target_file": "calc.py",
+    "description": "Fix power() so it returns base raised to exp.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "power"
+  },
+  {
+    "id": "t06",
+    "repo": "data/repos_task/t06",
+    "target_file": "calc.py",
+    "description": "Fix is_even() so it returns True for even numbers.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "is_even"
+  },
+  {
+    "id": "t07",
+    "repo": "data/repos_task/t07",
+    "target_file": "calc.py",
+    "description": "Fix factorial() so factorial(5) is 120.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "factorial"
+  },
+  {
+    "id": "t08",
+    "repo": "data/repos_task/t08",
+    "target_file": "calc.py",
+    "description": "Fix average() so it divides by the number of items.",
+    "test_command": "python3 -m unittest test_calc -v",
+    "gold_patch": "def add(a, b):\n    return a + b\n\n\ndef sub(a, b):\n    return a - b\n\n\ndef mul(a, b):\n    return a * b\n\n\ndef div(a, b):\n    return a / b\n\n\ndef power(base, exp):\n    return base ** exp\n\n\ndef is_even(n):\n    return n % 2 == 0\n\n\ndef factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\n\ndef average(nums):\n    return sum(nums) / len(nums)\n",
+    "function": "average"
+  },
+  {
+    "id": "t09",
+    "repo": "data/repos_task/t09",
+    "target_file": "strings.py",
+    "description": "Fix reverse() so it returns the string reversed.",
+    "test_command": "python3 -m unittest test_strings -v",
+    "gold_patch": "def reverse(s):\n    return s[::-1]\n\n\ndef is_palindrome(s):\n    t = s.lower()\n    return t == t[::-1]\n\n\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n\n\ndef title_case(s):\n    return s.title()\n\n\ndef slugify(s):\n    return s.lower().replace(\" \", \"-\")\n\n\ndef truncate(s, n):\n    return s[:n]\n\n\ndef repeat(s, n):\n    return \"\".join([s] * n)\n",
+    "function": "reverse"
+  },
+  {
+    "id": "t10",
+    "repo": "data/repos_task/t10",
+    "target_file": "strings.py",
+    "description": "Fix is_palindrome() so it is case-insensitive.",
+    "test_command": "python3 -m unittest test_strings -v",
+    "gold_patch": "def reverse(s):\n    return s[::-1]\n\n\ndef is_palindrome(s):\n    t = s.lower()\n    return t == t[::-1]\n\n\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n\n\ndef title_case(s):\n    return s.title()\n\n\ndef slugify(s):\n    return s.lower().replace(\" \", \"-\")\n\n\ndef truncate(s, n):\n    return s[:n]\n\n\ndef repeat(s, n):\n    return \"\".join([s] * n)\n",
+    "function": "is_palindrome"
+  },
+  {
+    "id": "t11",
+    "repo": "data/repos_task/t11",
+    "target_file": "strings.py",
+    "description": "Fix count_vowels() so it counts all five vowels including u.",
+    "test_command": "python3 -m unittest test_strings -v",
+    "gold_patch": "def reverse(s):\n    return s[::-1]\n\n\ndef is_palindrome(s):\n    t = s.lower()\n    return t == t[::-1]\n\n\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n\n\ndef title_case(s):\n    return s.title()\n\n\ndef slugify(s):\n    return s.lower().replace(\" \", \"-\")\n\n\ndef truncate(s, n):\n    return s[:n]\n\n\ndef repeat(s, n):\n    return \"\".join([s] * n)\n",
+    "function": "count_vowels"
+  },
+  {
+    "id": "t12",
+    "repo": "data/repos_task/t12",
+    "target_file": "strings.py",
+    "description": "Fix title_case() so it capitalizes each word.",
+    "test_command": "python3 -m unittest test_strings -v",
+    "gold_patch": "def reverse(s):\n    return s[::-1]\n\n\ndef is_palindrome(s):\n    t = s.lower()\n    return t == t[::-1]\n\n\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n\n\ndef title_case(s):\n    return s.title()\n\n\ndef slugify(s):\n    return s.lower().replace(\" \", \"-\")\n\n\ndef truncate(s, n):\n    return s[:n]\n\n\ndef repeat(s, n):\n    return \"\".join([s] * n)\n",
+    "function": "title_case"
+  },
+  {
+    "id": "t13",
+    "repo": "data/repos_task/t13",
+    "target_file": "strings.py",
+    "description": "Fix slugify() so spaces become hyphens.",
+    "test_command": "python3 -m unittest test_strings -v",
+    "gold_patch": "def reverse(s):\n    return s[::-1]\n\n\ndef is_palindrome(s):\n    t = s.lower()\n    return t == t[::-1]\n\n\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n\n\ndef title_case(s):\n    return s.title()\n\n\ndef slugify(s):\n    return s.lower().replace(\" \", \"-\")\n\n\ndef truncate(s, n):\n    return s[:n]\n\n\ndef repeat(s, n):\n    return \"\".join([s] * n)\n",
+    "function": "slugify"
+  },
+  {
+    "id": "t14",
+    "repo": "data/repos_task/t14",
+    "target_file": "strings.py",
+    "description": "Fix truncate() so truncate(s, n) returns exactly n chars.",
+    "test_command": "python3 -m unittest test_strings -v",
+    "gold_patch": "def reverse(s):\n    return s[::-1]\n\n\ndef is_palindrome(s):\n    t = s.lower()\n    return t == t[::-1]\n\n\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n\n\ndef title_case(s):\n    return s.title()\n\n\ndef slugify(s):\n    return s.lower().replace(\" \", \"-\")\n\n\ndef truncate(s, n):\n    return s[:n]\n\n\ndef repeat(s, n):\n    return \"\".join([s] * n)\n",
+    "function": "truncate"
+  },
+  {
+    "id": "t15",
+    "repo": "data/repos_task/t15",
+    "target_file": "strings.py",
+    "description": "Fix repeat() so repeats are joined with no separator.",
+    "test_command": "python3 -m unittest test_strings -v",
+    "gold_patch": "def reverse(s):\n    return s[::-1]\n\n\ndef is_palindrome(s):\n    t = s.lower()\n    return t == t[::-1]\n\n\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n\n\ndef title_case(s):\n    return s.title()\n\n\ndef slugify(s):\n    return s.lower().replace(\" \", \"-\")\n\n\ndef truncate(s, n):\n    return s[:n]\n\n\ndef repeat(s, n):\n    return \"\".join([s] * n)\n",
+    "function": "repeat"
+  },
+  {
+    "id": "t16",
+    "repo": "data/repos_task/t16",
+    "target_file": "config.py",
+    "description": "Fix get_nested() so it walks nested dicts and returns default only when a key is missing.",
+    "test_command": "python3 -m unittest test_config -v",
+    "gold_patch": "def get_nested(d, keys, default=None):\n    cur = d\n    for k in keys:\n        if not isinstance(cur, dict) or k not in cur:\n            return default\n        cur = cur[k]\n    return cur\n\n\ndef merge_dicts(a, b):\n    out = dict(a)\n    for k, v in b.items():\n        if k in out and isinstance(out[k], dict) and isinstance(v, dict):\n            out[k] = merge_dicts(out[k], v)\n        else:\n            out[k] = v\n    return out\n\n\ndef flatten_dict(d, parent=\"\", sep=\".\"):\n    items = {}\n    for k, v in d.items():\n        key = parent + sep + k if parent else k\n        if isinstance(v, dict):\n            items.update(flatten_dict(v, key, sep))\n        else:\n            items[key] = v\n    return items\n\n\ndef env_int(value):\n    return int(value)\n\n\ndef validate_port(p):\n    return isinstance(p, int) and 1 <= p <= 65535\n",
+    "function": "get_nested"
+  },
+  {
+    "id": "t17",
+    "repo": "data/repos_task/t17",
+    "target_file": "config.py",
+    "description": "Fix merge_dicts() so nested dicts merge recursively instead of being overwritten.",
+    "test_command": "python3 -m unittest test_config -v",
+    "gold_patch": "def get_nested(d, keys, default=None):\n    cur = d\n    for k in keys:\n        if not isinstance(cur, dict) or k not in cur:\n            return default\n        cur = cur[k]\n    return cur\n\n\ndef merge_dicts(a, b):\n    out = dict(a)\n    for k, v in b.items():\n        if k in out and isinstance(out[k], dict) and isinstance(v, dict):\n            out[k] = merge_dicts(out[k], v)\n        else:\n            out[k] = v\n    return out\n\n\ndef flatten_dict(d, parent=\"\", sep=\".\"):\n    items = {}\n    for k, v in d.items():\n        key = parent + sep + k if parent else k\n        if isinstance(v, dict):\n            items.update(flatten_dict(v, key, sep))\n        else:\n            items[key] = v\n    return items\n\n\ndef env_int(value):\n    return int(value)\n\n\ndef validate_port(p):\n    return isinstance(p, int) and 1 <= p <= 65535\n",
+    "function": "merge_dicts"
+  },
+  {
+    "id": "t18",
+    "repo": "data/repos_task/t18",
+    "target_file": "config.py",
+    "description": "Fix flatten_dict() so nested keys join with dots (already correct shape; keep behavior).",
+    "test_command": "python3 -m unittest test_config -v",
+    "gold_patch": "def get_nested(d, keys, default=None):\n    cur = d\n    for k in keys:\n        if not isinstance(cur, dict) or k not in cur:\n            return default\n        cur = cur[k]\n    return cur\n\n\ndef merge_dicts(a, b):\n    out = dict(a)\n    for k, v in b.items():\n        if k in out and isinstance(out[k], dict) and isinstance(v, dict):\n            out[k] = merge_dicts(out[k], v)\n        else:\n            out[k] = v\n    return out\n\n\ndef flatten_dict(d, parent=\"\", sep=\".\"):\n    items = {}\n    for k, v in d.items():\n        key = parent + sep + k if parent else k\n        if isinstance(v, dict):\n            items.update(flatten_dict(v, key, sep))\n        else:\n            items[key] = v\n    return items\n\n\ndef env_int(value):\n    return int(value)\n\n\ndef validate_port(p):\n    return isinstance(p, int) and 1 <= p <= 65535\n",
+    "function": "flatten_dict"
+  },
+  {
+    "id": "t19",
+    "repo": "data/repos_task/t19",
+    "target_file": "config.py",
+    "description": "Fix env_int() so it returns an int, not the raw string.",
+    "test_command": "python3 -m unittest test_config -v",
+    "gold_patch": "def get_nested(d, keys, default=None):\n    cur = d\n    for k in keys:\n        if not isinstance(cur, dict) or k not in cur:\n            return default\n        cur = cur[k]\n    return cur\n\n\ndef merge_dicts(a, b):\n    out = dict(a)\n    for k, v in b.items():\n        if k in out and isinstance(out[k], dict) and isinstance(v, dict):\n            out[k] = merge_dicts(out[k], v)\n        else:\n            out[k] = v\n    return out\n\n\ndef flatten_dict(d, parent=\"\", sep=\".\"):\n    items = {}\n    for k, v in d.items():\n        key = parent + sep + k if parent else k\n        if isinstance(v, dict):\n            items.update(flatten_dict(v, key, sep))\n        else:\n            items[key] = v\n    return items\n\n\ndef env_int(value):\n    return int(value)\n\n\ndef validate_port(p):\n    return isinstance(p, int) and 1 <= p <= 65535\n",
+    "function": "env_int"
+  },
+  {
+    "id": "t20",
+    "repo": "data/repos_task/t20",
+    "target_file": "config.py",
+    "description": "Fix validate_port() so it only accepts integers from 1 to 65535.",
+    "test_command": "python3 -m unittest test_config -v",
+    "gold_patch": "def get_nested(d, keys, default=None):\n    cur = d\n    for k in keys:\n        if not isinstance(cur, dict) or k not in cur:\n            return default\n        cur = cur[k]\n    return cur\n\n\ndef merge_dicts(a, b):\n    out = dict(a)\n    for k, v in b.items():\n        if k in out and isinstance(out[k], dict) and isinstance(v, dict):\n            out[k] = merge_dicts(out[k], v)\n        else:\n            out[k] = v\n    return out\n\n\ndef flatten_dict(d, parent=\"\", sep=\".\"):\n    items = {}\n    for k, v in d.items():\n        key = parent + sep + k if parent else k\n        if isinstance(v, dict):\n            items.update(flatten_dict(v, key, sep))\n        else:\n            items[key] = v\n    return items\n\n\ndef env_int(value):\n    return int(value)\n\n\ndef validate_port(p):\n    return isinstance(p, int) and 1 <= p <= 65535\n",
+    "function": "validate_port"
+  }
+]

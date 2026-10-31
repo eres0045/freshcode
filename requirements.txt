@@ -1,0 +1,4 @@
+# FreshCode dependencies
+# Core runs on the Python standard library only.
+# Optional, only for live freshness checks:
+tavily-python>=0.5.0

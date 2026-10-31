@@ -1,0 +1,602 @@
+[
+  {
+    "text": "Python 3.13 was released in October 2024.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://www.python.org/downloads/release/python-3.13.0/"
+  },
+  {
+    "text": "React 19 was released in December 2024.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://react.dev/blog/2024/12/05/react-19.html"
+  },
+  {
+    "text": "Satya Nadella is the CEO of Microsoft.",
+    "label": "fresh",
+    "category": "leadership",
+    "source": "https://www.microsoft.com/en-us/about/leadership/satya-nadella"
+  },
+  {
+    "text": "Sundar Pichai is the CEO of Alphabet.",
+    "label": "fresh",
+    "category": "leadership",
+    "source": "https://abc.xyz/investor/leadership/"
+  },
+  {
+    "text": "Tim Cook is the CEO of Apple.",
+    "label": "fresh",
+    "category": "leadership",
+    "source": "https://www.apple.com/leadership/tim-cook/"
+  },
+  {
+    "text": "The Eiffel Tower is in Paris, France.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+  },
+  {
+    "text": "Water boils at 100 degrees Celsius at sea level.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Boiling_point"
+  },
+  {
+    "text": "The iPhone 17 was released in September 2025.",
+    "label": "fresh",
+    "category": "pricing",
+    "source": "https://www.apple.com/newsroom/2025/09/apple-debuts-iphone-17/"
+  },
+  {
+    "text": "Node.js 22 is an LTS release line.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://nodejs.org/en/about/previous-releases"
+  },
+  {
+    "text": "TypeScript 5 was released in 2023.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html"
+  },
+  {
+    "text": "GitHub is owned by Microsoft.",
+    "label": "fresh",
+    "category": "leadership",
+    "source": "https://en.wikipedia.org/wiki/GitHub"
+  },
+  {
+    "text": "The Linux kernel was created by Linus Torvalds.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "text": "ChatGPT was first released in November 2022.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+    "text": "The FIFA World Cup 2026 is hosted by the USA, Canada and Mexico.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup"
+  },
+  {
+    "text": "Python uses indentation to define code blocks.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://docs.python.org/3/reference/lexical_analysis.html"
+  },
+  {
+    "text": "The Burj Khalifa in Dubai, completed in 2010, is the tallest building in the world.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Amazon_River"
+  },
+  {
+    "text": "Java 21 is a long-term support release.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://www.oracle.com/java/technologies/javase/21-relnote-issues.html"
+  },
+  {
+    "text": "The European Union uses the euro as its main currency in most member states.",
+    "label": "fresh",
+    "category": "law",
+    "source": "https://en.wikipedia.org/wiki/Euro"
+  },
+  {
+    "text": "Barack Obama was the 44th President of the United States.",
+    "label": "fresh",
+    "category": "leadership",
+    "source": "https://en.wikipedia.org/wiki/Barack_Obama"
+  },
+  {
+    "text": "The speed of light in vacuum is about 299,792 kilometres per second.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Speed_of_light"
+  },
+  {
+    "text": "VS Code is developed by Microsoft.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://code.visualstudio.com/"
+  },
+  {
+    "text": "Rust 1.0 was released in 2015.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://blog.rust-lang.org/2015/05/15/Rust-1.0.html"
+  },
+  {
+    "text": "The Great Wall of China is in China.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+  },
+  {
+    "text": "Android is developed by Google.",
+    "label": "fresh",
+    "category": "leadership",
+    "source": "https://en.wikipedia.org/wiki/Android_(operating_system)"
+  },
+  {
+    "text": "The Python package index is called PyPI.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://pypi.org/"
+  },
+  {
+    "text": "France is a member of the European Union.",
+    "label": "fresh",
+    "category": "law",
+    "source": "https://en.wikipedia.org/wiki/Member_state_of_the_European_Union"
+  },
+  {
+    "text": "The currency of Japan is the yen.",
+    "label": "fresh",
+    "category": "pricing",
+    "source": "https://en.wikipedia.org/wiki/Japanese_yen"
+  },
+  {
+    "text": "Docker was first released in 2013.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://en.wikipedia.org/wiki/Docker_(software)"
+  },
+  {
+    "text": "The International Space Station orbits Earth.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/International_Space_Station"
+  },
+  {
+    "text": "Go was developed at Google.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://go.dev/doc/faq"
+  },
+  {
+    "text": "The Nobel Prizes were established by Alfred Nobel's will.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Nobel_Prize"
+  },
+  {
+    "text": "Kubernetes was originally developed by Google.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://en.wikipedia.org/wiki/Kubernetes"
+  },
+  {
+    "text": "The UK driving side is the left.",
+    "label": "fresh",
+    "category": "law",
+    "source": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+  },
+  {
+    "text": "SQLite is a serverless embedded database.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://www.sqlite.org/about.html"
+  },
+  {
+    "text": "The Amazon rainforest is mostly in Brazil.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+  },
+  {
+    "text": "JavaScript was created in 1995.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://en.wikipedia.org/wiki/JavaScript"
+  },
+  {
+    "text": "The Statue of Liberty was a gift from France.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+  },
+  {
+    "text": "PostgreSQL is an open-source relational database.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://www.postgresql.org/about/"
+  },
+  {
+    "text": "The currency of the United Kingdom is the pound sterling.",
+    "label": "fresh",
+    "category": "pricing",
+    "source": "https://en.wikipedia.org/wiki/Pound_sterling"
+  },
+  {
+    "text": "The first Moon landing was in 1969.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Apollo_11"
+  },
+  {
+    "text": "TensorFlow was developed by Google.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://en.wikipedia.org/wiki/TensorFlow"
+  },
+  {
+    "text": "The Sahara is the largest hot desert in the world.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Sahara"
+  },
+  {
+    "text": "India's capital is New Delhi.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/New_Delhi"
+  },
+  {
+    "text": "The HTTP status code 404 means Not Found.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "text": "The HTTP status code 200 means OK.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200"
+  },
+  {
+    "text": "Mount Everest is the highest mountain above sea level.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Mount_Everest"
+  },
+  {
+    "text": "The Pacific Ocean is the largest ocean on Earth.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Pacific_Ocean"
+  },
+  {
+    "text": "Linux is an open-source operating system kernel.",
+    "label": "fresh",
+    "category": "api",
+    "source": "https://en.wikipedia.org/wiki/Linux"
+  },
+  {
+    "text": "The World Wide Web was invented by Tim Berners-Lee.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+  },
+  {
+    "text": "Canada's capital is Ottawa.",
+    "label": "fresh",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Ottawa"
+  },
+  {
+    "text": "The current Python version is 3.11.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.python.org/downloads/"
+  },
+  {
+    "text": "The latest iPhone is the iPhone 15.",
+    "label": "stale",
+    "category": "pricing",
+    "source": "https://www.apple.com/iphone/"
+  },
+  {
+    "text": "Twitter is called Twitter.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://x.com/"
+  },
+  {
+    "text": "React's latest major version is 18.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://react.dev/versions"
+  },
+  {
+    "text": "The President of the United States is Joe Biden.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://www.whitehouse.gov/"
+  },
+  {
+    "text": "The UK is a member of the European Union.",
+    "label": "stale",
+    "category": "law",
+    "source": "https://en.wikipedia.org/wiki/Brexit"
+  },
+  {
+    "text": "Java's latest LTS version is 17.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.oracle.com/java/technologies/downloads/"
+  },
+  {
+    "text": "The current Node.js LTS line is 20.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://nodejs.org/en/about/previous-releases"
+  },
+  {
+    "text": "Facebook's parent company is called Facebook Inc.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://about.meta.com/"
+  },
+  {
+    "text": "The tallest building in the world is the Taipei 101.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Burj_Khalifa"
+  },
+  {
+    "text": "The price of Netflix standard plan is $15.49 per month in the US.",
+    "label": "stale",
+    "category": "pricing",
+    "source": "https://www.netflix.com/"
+  },
+  {
+    "text": "TypeScript's latest major version is 4.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.typescriptlang.org/"
+  },
+  {
+    "text": "The CEO of Twitter is Jack Dorsey.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://x.com/"
+  },
+  {
+    "text": "The FIFA World Cup 2022 was hosted by Qatar and is the upcoming World Cup.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+  },
+  {
+    "text": "Angular's latest major version is 12.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://angular.io/"
+  },
+  {
+    "text": "The current version of Ubuntu LTS is 20.04.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://ubuntu.com/about/release-cycle"
+  },
+  {
+    "text": "The Prime Minister of the United Kingdom is Rishi Sunak.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://www.gov.uk/"
+  },
+  {
+    "text": "The currency of Croatia is the kuna.",
+    "label": "stale",
+    "category": "pricing",
+    "source": "https://en.wikipedia.org/wiki/Croatian_kuna"
+  },
+  {
+    "text": "Google's parent company is called Google Inc.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://abc.xyz/"
+  },
+  {
+    "text": "The latest version of Django is 3.2.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.djangoproject.com/"
+  },
+  {
+    "text": "The International Space Station is planned to operate until 2020.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/International_Space_Station"
+  },
+  {
+    "text": "The current version of Go is 1.19.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://go.dev/dl/"
+  },
+  {
+    "text": "Tesla's Gigafactory in Berlin has not opened yet.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://www.tesla.com/"
+  },
+  {
+    "text": "The population of India is about 1.2 billion.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Demographics_of_India"
+  },
+  {
+    "text": "The latest Android version is Android 12.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://en.wikipedia.org/wiki/Android_version_history"
+  },
+  {
+    "text": "The CEO of Amazon is Jeff Bezos.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://www.aboutamazon.com/"
+  },
+  {
+    "text": "The current version of Rust is 1.60.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.rust-lang.org/"
+  },
+  {
+    "text": "The Olympic Games 2024 will be held in Paris and have not happened yet.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/2024_Summer_Olympics"
+  },
+  {
+    "text": "The price of Spotify Premium is $9.99 per month in the US.",
+    "label": "stale",
+    "category": "pricing",
+    "source": "https://www.spotify.com/"
+  },
+  {
+    "text": "The latest version of Kubernetes is 1.24.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://kubernetes.io/releases/"
+  },
+  {
+    "text": "The Chancellor of Germany is Angela Merkel.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://en.wikipedia.org/wiki/Chancellor_of_Germany"
+  },
+  {
+    "text": "The current version of PostgreSQL is 13.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.postgresql.org/docs/release/"
+  },
+  {
+    "text": "The James Webb Space Telescope has not launched yet.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+  },
+  {
+    "text": "The latest macOS version is macOS Monterey.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.apple.com/macos/"
+  },
+  {
+    "text": "The President of France is Emmanuel Macron and he is in his first term.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://www.elysee.fr/"
+  },
+  {
+    "text": "The current version of VS Code is 1.70.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://code.visualstudio.com/updates"
+  },
+  {
+    "text": "The tallest mountain in Africa is Mount Kenya.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+  },
+  {
+    "text": "The currency of Turkey is the Turkish lira at 18 per US dollar.",
+    "label": "stale",
+    "category": "pricing",
+    "source": "https://en.wikipedia.org/wiki/Turkish_lira"
+  },
+  {
+    "text": "The latest version of Flask is 2.0.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://flask.palletsprojects.com/"
+  },
+  {
+    "text": "The CEO of Microsoft is Steve Ballmer.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://www.microsoft.com/"
+  },
+  {
+    "text": "The current iPad uses a Lightning connector.",
+    "label": "stale",
+    "category": "pricing",
+    "source": "https://www.apple.com/ipad/"
+  },
+  {
+    "text": "The latest version of Vue.js is 2.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://vuejs.org/"
+  },
+  {
+    "text": "The UK monarch is Queen Elizabeth II.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://www.royal.uk/"
+  },
+  {
+    "text": "The current version of MySQL is 5.7.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://dev.mysql.com/doc/"
+  },
+  {
+    "text": "The Artemis program will land astronauts on the Moon in 2024.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://www.nasa.gov/artemis/"
+  },
+  {
+    "text": "The latest version of Windows is Windows 10.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.microsoft.com/windows"
+  },
+  {
+    "text": "The population of the world is 7 billion.",
+    "label": "stale",
+    "category": "general",
+    "source": "https://en.wikipedia.org/wiki/World_population"
+  },
+  {
+    "text": "The current version of SQLite is 3.36.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://www.sqlite.org/changes.html"
+  },
+  {
+    "text": "The CEO of OpenAI is Mira Murati.",
+    "label": "stale",
+    "category": "leadership",
+    "source": "https://openai.com/"
+  },
+  {
+    "text": "The latest version of Tailwind CSS is 2.",
+    "label": "stale",
+    "category": "api",
+    "source": "https://tailwindcss.com/"
+  }
+]
