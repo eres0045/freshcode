@@ -7,8 +7,10 @@ Token-saving mechanisms, all four, each measurable:
    `summarize_after_tokens`, older turns are replaced by a short
    summary line instead of being re-sent every turn.
 3. Failure-loop cutoff: after MAX_IDENTICAL_FAILS identical failed
-   actions, the agent gets ONE redirect hint; if the same action
-   fails again, the run stops instead of burning more tokens.
+   actions, the agent gets a redirect hint; at most MAX_REDIRECTS
+   redirects per run, then the run stops instead of burning tokens.
+   (A per-action redirect alone lets an agent alternate between two
+   failing actions forever; the global budget closes that hole.)
 4. Live retrieval instead of pasted docs: the `search` tool returns
    short snippets (max 3 results, truncated) so the agent never needs
    long documentation pasted into context.
@@ -22,7 +24,7 @@ from .tools import ToolSet, parse_action
 
 MAX_TURNS = 25
 MAX_IDENTICAL_FAILS = 3
-SUMMARIZE_AFTER_TOKENS = 3000
+MAX_REDIRECTS = 2
 
 
 def _summarize_turns(turns):
@@ -48,7 +50,7 @@ def run_agent(task, model, search_provider=None, max_turns=MAX_TURNS,
     passed = False
     stopped_reason = "finished"
     fail_streak = {}  # action signature -> consecutive failures
-    last_failed_sig = None
+    redirects = 0
 
     system = ("You are FreshCode, a coding agent. Fix the task with as "
               "few tokens as possible. Use ACTION lines only.\n"
@@ -95,12 +97,12 @@ def run_agent(task, model, search_provider=None, max_turns=MAX_TURNS,
         if out.startswith("ERROR") or out.startswith("FAIL"):
             fail_streak[sig] = fail_streak.get(sig, 0) + 1
             if failure_cutoff and fail_streak[sig] >= MAX_IDENTICAL_FAILS:
-                if last_failed_sig != sig:
-                    # One redirect, then stop on repeat.
+                if redirects < MAX_REDIRECTS:
+                    # One redirect hint per budget unit, then stop.
                     history.append({"action": "redirect",
                                     "text": "Same action failed repeatedly; "
                                             "try a different approach."})
-                    last_failed_sig = sig
+                    redirects += 1
                     fail_streak[sig] = 0
                 else:
                     stopped_reason = "failure_loop_cutoff"

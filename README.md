@@ -32,7 +32,7 @@ alongside so every comparison is apples-to-apples.
 ## Run it
 
 ```bash
-# Tests (offline, stdlib only)
+# Tests (offline, stdlib only) — 41 tests, all green
 python3 -m unittest discover -s tests -v
 
 # Pipeline demo (STUB MODE -- see honesty section)
@@ -71,7 +71,38 @@ Hashes (sha256):
 - **Stub mode is not measurement.** `StubModel` returns canned gold
   patches and `StubProvider` returns canned verdicts. Any number
   produced in stub mode demonstrates that the pipeline runs; it is
-  NOT an agent result. Real targets from research: 30–45% fewer tokens
+  NOT an agent result. Measured stub numbers (2026-10-31): full
+  20-task comparison, agent 589.7 tokens/task vs baseline 620.0
+  (4.9% savings, both pass@1 1.0, 3.0 turns/task) — this is a
+  masking-only floor, because the stub writes gold on turn 1 and the
+  loop barely exercises summarization or retrieval. It is NOT the
+  30–45% token-saving claim. Full-100 detector numbers with stub
+  verdicts (precision/recall 1.0) are tautological by construction
+  and are likewise NOT measurements.
+- **Live-heuristic calibration probe (real measurement, 20 claims,
+  hand-written current-fact evidence, October 2026):** precision
+  1.0, recall 0.4 (4/10 stale caught); fresh scores mean 0.993,
+  range [0.929, 1.000]; stale scores mean 0.620, range
+  [0.250, 0.929]. The ranges touch at 0.929 and 5 of the 6 missed
+  stale claims score ≥ 0.75 — so the freshness score alone is NOT
+  a reliable separator, and the heuristic catches dotted-version,
+  year, and price mismatches but NOT bare-number versions
+  ("latest is 17" vs "21") or entity replacements ("Biden" vs
+  "Trump"). A full-100 live-heuristic calibration cannot be
+  measured without evidence snippets for all 100 claims; it is not
+  claimed here.
+- **Hardening pass (2026-10-31, 25 new tests):** fixed a real
+  path-traversal hole (plain `startswith` was fooled by sibling
+  directories like `/tmp/repo_evil`); closed the alternating-action
+  failure loop with a global redirect budget (max 2 per run); made
+  temp-dir cleanup exception-safe; made malformed claim labels fail
+  loudly instead of silently counting as misses; fixed version
+  comparison so 3.13 vs 3.13.0 is the same line, not a mismatch;
+  fixed tokenization so sentence-final punctuation no longer
+  depresses keyword overlap. No frozen evaluation data was changed
+  in this pass (all 100 claim labels re-verified correct as of
+  October 2026).
+- **Real targets from research: 30–45% fewer tokens
   than baseline at equal or better pass rate (20–30 tasks), detector
   precision ≥ 0.85 / recall ≥ 0.80 on the 100-claim set. Those targets
   are **not yet measured** — no real-model run has happened yet.
@@ -103,7 +134,14 @@ Hashes (sha256):
 ## Honest limits
 
 - The freshness verdict heuristic will misjudge edge cases; the
-  labeled set exists to measure that, not hide it.
+  labeled set exists to measure that, not hide it. Known misses
+  (measured 2026-10-31): bare-number version changes and entity
+  replacements are not caught; the freshness score overlaps between
+  fresh and stale claims, so it must not be used as a lone threshold.
+- The agent's pass verdict is the repo's own tests only: a patch
+  that hardcodes a visible answer passes visibly while breaking
+  hidden behavior, and the agent cannot see that. Hidden tests per
+  task would close this gap and are a recommended next step.
 - Token counts are estimates (chars/4) unless the model reports usage.
 - The agent's action language is line-based (`ACTION:` lines) so any
   chat model can use it without function calling — simpler, but less

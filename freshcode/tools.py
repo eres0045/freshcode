@@ -56,8 +56,12 @@ class ToolSet:
         return "\n".join(schemas[k] for k in schemas if k in visible), saved
 
     def _safe(self, rel):
-        path = os.path.normpath(os.path.join(self.repo_path, rel))
-        if not path.startswith(os.path.normpath(self.repo_path)):
+        # Resolve symlinks and compare full path components: a plain
+        # startswith() check is fooled by sibling dirs (repo="/tmp/repo"
+        # vs "/tmp/repo_evil/x" shares the prefix "/tmp/repo").
+        base = os.path.realpath(self.repo_path)
+        path = os.path.realpath(os.path.join(base, rel))
+        if os.path.commonpath([base, path]) != base:
             raise ValueError("path escapes repo: " + rel)
         return path
 

@@ -36,8 +36,14 @@ def run_task_comparison(tasks, agent_fn, baseline_fn):
     for task in tasks:
         a_task = _copy_task(task)
         b_task = _copy_task(task)
-        a = agent_fn(a_task)
-        b = baseline_fn(b_task)
+        try:
+            a = agent_fn(a_task)
+            b = baseline_fn(b_task)
+        finally:
+            # Temp copies are removed even if an agent raises, so a
+            # crashed run never leaks task repos into /tmp.
+            shutil.rmtree(a_task["_tmp"], ignore_errors=True)
+            shutil.rmtree(b_task["_tmp"], ignore_errors=True)
         rows.append({
             "task_id": task["id"],
             "agent_passed": a["passed"],
@@ -48,8 +54,6 @@ def run_task_comparison(tasks, agent_fn, baseline_fn):
             "baseline_turns": b["turns"],
             "tokens_saved_by_masking": a.get("tokens_saved_by_masking", 0),
         })
-        shutil.rmtree(a_task["_tmp"], ignore_errors=True)
-        shutil.rmtree(b_task["_tmp"], ignore_errors=True)
     n = max(1, len(rows))
     agent_tokens = sum(r["agent_tokens"] for r in rows)
     baseline_tokens = sum(r["baseline_tokens"] for r in rows)
@@ -85,11 +89,15 @@ def evaluate_detector(labeled_claims, provider, max_results=3):
     credits_before = getattr(provider, "credits_used", 0)
     calls_before = getattr(provider, "calls", 0)
     for item in labeled_claims:
+        label = item["label"]
+        if label not in ("fresh", "stale"):
+            raise ValueError(
+                "claim label must be 'fresh' or 'stale', got %r "
+                "for claim %r" % (label, item.get("text", "")[:80]))
         start = time.monotonic()
         results = provider.search(item["text"], max_results=max_results)
         verdict, _score, _src = check_claim(item["text"], results)
         latencies.append(time.monotonic() - start)
-        label = item["label"]
         if verdict == "stale" and label == "stale":
             tp += 1
         elif verdict == "stale" and label == "fresh":
